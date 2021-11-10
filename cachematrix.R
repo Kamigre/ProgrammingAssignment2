@@ -1,4 +1,4 @@
-## Function 1
+## Function 1: creating a matrix
 
 makeCacheMatrix <- function(x = matrix()){
     inv <- NULL
@@ -12,7 +12,7 @@ makeCacheMatrix <- function(x = matrix()){
     list(set=set, get=get, setInverse=setInverse, getInverse=getInverse)
 }
 
-## Function 2
+## Function 2: inverting the matrix
 
 cacheSolve <- function(x, ...){
     inv <- x$getInverse()
@@ -26,7 +26,7 @@ cacheSolve <- function(x, ...){
     inv
 }
 
-## Return a matrix that is the inverse of 'x'
+## Return a matrix that is the inverse
 
 matrix1 <- makeCacheMatrix(matrix(1:4,2,2))
 matrix1$get()
